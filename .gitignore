@@ -5,11 +5,11 @@ __pycache__/
 .venv/
 venv/
 
-# ===== YOLO 训练权重与输出（体积大，不纳入版本库）=====
+# ===== YOLO 训练中间产物（体积大，不纳入版本库）=====
+# 注：最终板端模型 k230/kmodel/best.kmodel 已纳入版本库，供直接部署复现
 runs/
 *.pt
 *.onnx
-*.kmodel
 
 # ===== 数据集与校准图片（由用户自行从 Roboflow 导出）=====
 dataset_black_mat/

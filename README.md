@@ -82,6 +82,7 @@ parts-sorting-robot/
 ├── k230/
 │   ├── main.py                        # K230 视觉推理主程序（含 WDT 自愈）
 │   └── kmodel/
+│       ├── best.kmodel                # 板端推理模型（nncase INT8，可直接部署）
 │       └── README.md                  # 模型部署与标签约束说明
 └── train/
     ├── README.md                      # 训练与量化全流程指南
@@ -98,8 +99,8 @@ parts-sorting-robot/
 3. 选择 AVR 板卡（Uno / Nano / Mega / Basra），编译上传。
 
 ### 2. K230 模型与脚本部署
-1. 参考 `train/README.md` 完成「Roboflow 标注 → 本地训练 → Docker 量化」得到 `best.kmodel`。
-2. 将 `best.kmodel` 放入 TF 卡 `/kmodel/best.kmodel`。
+1. 模型已随仓库提供（`k230/kmodel/best.kmodel`），直接放入 TF 卡 `/kmodel/best.kmodel` 即可。
+2. 如需重新训练，参考 `train/README.md` 完成「Roboflow 标注 → 本地训练 → Docker 量化」。
 3. 将 `k230/main.py` 放入 SD 卡根目录（上电自启可另存为 `main.py`）。
 
 ### 3. 硬件连线与上电
