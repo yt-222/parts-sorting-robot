@@ -1,0 +1,37 @@
+# ===== Python / MicroPython =====
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# ===== YOLO 训练权重与输出（体积大，不纳入版本库）=====
+runs/
+*.pt
+*.onnx
+*.kmodel
+
+# ===== 数据集与校准图片（由用户自行从 Roboflow 导出）=====
+dataset_black_mat/
+calib/
+*.jpg
+*.jpeg
+*.png
+
+# ===== 实际环境配置（仅提交 .env.example 模板）=====
+.env
+
+# ===== Arduino 编译中间产物 =====
+*.hex
+*.elf
+*.bin
+*.o
+*.d
+build/
+.arduino15/
+
+# ===== IDE 与系统临时文件 =====
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

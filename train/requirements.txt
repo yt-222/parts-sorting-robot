@@ -1,0 +1,9 @@
+# 本地 PC 端训练环境依赖（Conda k230_yolo / Python 3.9）
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+onnx>=1.14.0
+onnxsim>=0.4.33
+numpy>=1.22.0
+PyYAML>=6.0
+opencv-python>=4.7.0.72

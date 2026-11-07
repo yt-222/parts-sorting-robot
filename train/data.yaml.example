@@ -1,0 +1,11 @@
+# ==============================================================================
+# Roboflow 导出的 YOLOv8 数据集结构
+# 使用前请将路径修改为你本地解压后的绝对路径（确保单下划线命名一致）
+# ==============================================================================
+
+train: D:/K230_Convert/dataset_black_mat/train/images
+val: D:/K230_Convert/dataset_black_mat/valid/images
+test: D:/K230_Convert/dataset_black_mat/test/images
+
+nc: 3
+names: ['cube', 'cylinder', 'prism']
